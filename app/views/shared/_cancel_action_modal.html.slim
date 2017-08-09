@@ -9,6 +9,12 @@
         p.mb1.bold
           = t("#{app_flow}.cancel.warning_header")
         ul.px2.yellow-dots
+          li.mb2
+            = t("#{app_flow}.cancel.warning_point_primary_prefix")
+            - if decorated_session.sp_name
+              span.bold =  decorated_session.sp_name
+            - else
+              span.bold =  t("#{app_flow}.sp_name.default")
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point
