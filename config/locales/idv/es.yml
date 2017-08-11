@@ -12,6 +12,7 @@ es:
         send: Enviar una carta
       return_to_account: NOT TRANSLATED YET
       return_to_sp: NOT TRANSLATED YET
+      return_to_verify: NOT TRANSLATED YET
       send_confirmation_code: NOT TRANSLATED YET
     cancel:
       modal_header: "¿Está seguro que desea cancelar?"

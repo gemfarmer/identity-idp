@@ -12,6 +12,7 @@ en:
         send: Send a letter
       return_to_account: Return to account
       return_to_sp: Return to %{sp}
+      return_to_verify: "‹ Go back to seeing all options for proving my identity"
       send_confirmation_code: Send confirmation code
     cancel:
       modal_header: Are you sure you want to cancel?

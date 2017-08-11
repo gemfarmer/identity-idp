@@ -12,6 +12,7 @@ fr:
         send: Envoyer une lettre
       return_to_account: NOT TRANSLATED YET
       return_to_sp: NOT TRANSLATED YET
+      return_to_verify: NOT TRANSLATED YET
       send_confirmation_code: NOT TRANSLATED YET
     cancel:
       modal_header: Souhaitez-vous vraiment annuler?
