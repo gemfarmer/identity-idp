@@ -1,5 +1,7 @@
 - app_flow = idv ? 'idv' : 'sign_up'
-
+- sp_name = decorated_session.sp_name ? decorated_session.sp_name : t("#{app_flow}.sp_name.default")
+- warning_disclaimer = t("#{app_flow}.cancel.warning_disclaimer")
+- warning_point = t("#{app_flow}.cancel.warning_point").gsub('SP_NAME', "<span class='bold'>#{sp_name}</span>").gsub('DISCLAIMER', "<span class='italic'>#{warning_disclaimer}</span>")
 #cancel-action-modal.display-none
   = render layout: 'shared/modal_layout' do
     .p3.sm-p4.cntnr-xxskinny.border-box.bg-white.rounded-xxl.lg.modal-warning
@@ -10,11 +12,7 @@
           = t("#{app_flow}.cancel.warning_header")
         ul.px2.yellow-dots
           li.mb2
-            = t("#{app_flow}.cancel.warning_point_primary_prefix")
-            - if decorated_session.sp_name
-              span.bold =  decorated_session.sp_name
-            - else
-              span.bold =  t("#{app_flow}.sp_name.default")
+            = warning_point.html_safe
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point
