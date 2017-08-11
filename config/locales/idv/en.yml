@@ -16,13 +16,14 @@ en:
     cancel:
       modal_header: Are you sure you want to cancel?
       warning_header: If you cancel now
+      warning_disclaimer: may not
+      warning_point: Login.gov won't be able to verify your identity and you DISCLAIMER
+        be able to access your information at SP_NAME.
       warning_points:
-      - We won’t be able to verify your identity
-      - We won't keep a record of your name, address, birth date, or Social Security
-        number
-      - You won't be able to securely access your information using login.gov
-      - You’ll still have a login.gov account for your email address
-      - You can manage that account on your profile page
+      - Login.gov won't keep a record of your name, address, birth date, or Social
+        Security number.
+      - You’ll still have a login.gov account for your email address. You can manage
+        that account on your profile page
     errors:
       bad_dob: Your date of birth must be a valid date.
       duplicate_ssn: An account already exists with the information you provided.

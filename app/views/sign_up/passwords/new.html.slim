@@ -16,6 +16,6 @@ p.mt2.mb0#password-description
 
 = render 'shared/password_accordion'
 
-= render 'shared/cancel', link: destroy_user_session_path
+= render 'shared/cancel', link: destroy_user_session_path, decorated_session: decorated_session
 
 == javascript_include_tag 'misc/pw-strength'

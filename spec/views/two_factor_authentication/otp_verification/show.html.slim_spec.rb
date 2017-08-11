@@ -10,6 +10,8 @@ describe 'two_factor_authentication/otp_verification/show.html.slim' do
       reenter_phone_number_path: verify_phone_path,
     }
   end
+  let(:sp_name) { '🔒🌐💻' }
+
 
   context 'user has a phone' do
     before do
@@ -23,6 +25,10 @@ describe 'two_factor_authentication/otp_verification/show.html.slim' do
         view: view
       )
       allow(@presenter).to receive(:reauthn).and_return(false)
+
+      decorated_session = instance_double(ServiceProviderSessionDecorator)
+      allow(view).to receive(:decorated_session).and_return(decorated_session)
+      allow(decorated_session).to receive(:sp_name).and_return(sp_name)
     end
 
     context 'common OTP delivery screen behavior' do

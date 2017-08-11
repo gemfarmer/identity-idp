@@ -9,7 +9,8 @@ en:
       success: Your account has been deleted. We did not save your information.
       warning_header: If you cancel now
       warning_disclaimer: may not
-      warning_point: You DISCLAIMER be able to access your information at SP_NAME online.
+      warning_point: You DISCLAIMER be able to access your information at SP_NAME
+        online.
       warning_points:
       - You won’t have a login.gov account.
       - Login.gov won't store your email address, password, and phone number.

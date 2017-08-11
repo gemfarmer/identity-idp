@@ -16,14 +16,11 @@ fr:
     cancel:
       modal_header: Souhaitez-vous vraiment annuler?
       warning_header: Si vous annulez maintenant
+      warning_disclaimer: NOT TRANSLATED YET
+      warning_point: NOT TRANSLATED YET
       warning_points:
-      - Nous ne serons pas en mesure de vérifier votre identité
-      - Nous ne conserverons pas de dossier contenant votre nom, adresse, date de
-        naissance ou numéro de sécurité sociale
-      - Vous ne pourrez pas accéder à votre information de manière sécuritaire en
-        utilisant login.gov
-      - Vous conserverez un compte login.gov pour votre adresse courriel
-      - Vous pouvez gérer ce compte sur la page de votre profil
+      - NOT TRANSLATED YET
+      - NOT TRANSLATED YET
     errors:
       bad_dob: Votre date de naissance doit être une date valide.
       duplicate_ssn: Un compte existe déjà avec l'information que vous avez fournie.
