@@ -12,7 +12,6 @@ describe 'two_factor_authentication/otp_verification/show.html.slim' do
   end
   let(:sp_name) { '🔒🌐💻' }
 
-
   context 'user has a phone' do
     before do
       allow(view).to receive(:user_session).and_return({})
