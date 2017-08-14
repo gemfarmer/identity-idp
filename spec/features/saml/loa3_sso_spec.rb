@@ -4,7 +4,7 @@ feature 'LOA3 Single Sign On', idv_job: true do
   include SamlAuthHelper
   include IdvHelper
 
-  def perform_id_verification_with_usps_without_confirming_code(user)
+  def perform_id_verification_without_activation(user)
     allow(FeatureManagement).to receive(:prefill_otp_codes?).and_return(true)
     saml_authn_request = auth_request.create(loa3_with_bundle_saml_settings)
     visit saml_authn_request
@@ -16,6 +16,10 @@ feature 'LOA3 Single Sign On', idv_job: true do
     click_idv_continue
     fill_out_financial_form_ok
     click_idv_continue
+  end
+
+  def perform_id_verification_with_usps_without_confirming_code(user)
+    perform_id_verification_without_activation(user)
     click_idv_address_choose_usps
     click_on t('idv.buttons.mail.send')
     fill_in :user_password, with: user.password
@@ -124,6 +128,42 @@ feature 'LOA3 Single Sign On', idv_job: true do
         phone_confirmed: phone_confirmed,
         pii: { otp: otp, ssn: '6666', dob: '1920-01-01' }
       )
+    end
+
+    let(:return_to_verify_button) {
+      t('idv.buttons.return_to_verify')
+    }
+
+    context 'having selected phone option' do
+      let(:phone_confirmed) { false }
+
+      it 'there is a button that will return to the activation option page' do
+        user = create(:user, :signed_up)
+        perform_id_verification_without_activation(user)
+        click_idv_address_choose_phone
+
+        expect(page).to have_link(return_to_verify_button)
+
+        click_link(return_to_verify_button)
+
+        expect(current_path).to eq verify_address_path
+      end
+    end
+
+    context 'having selected mail option' do
+      let(:phone_confirmed) { false }
+
+      it 'there is a button that will return to the activation option page' do
+        user = create(:user, :signed_up)
+        perform_id_verification_without_activation(user)
+        click_idv_address_choose_usps
+
+        expect(page).to have_link(return_to_verify_button)
+
+        click_link(return_to_verify_button)
+
+        expect(current_path).to eq verify_address_path
+      end
     end
 
     context 'having previously selected USPS verification' do
