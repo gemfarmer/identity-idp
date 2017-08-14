@@ -62,7 +62,6 @@ es:
       select_financial_account: Seleccione una cuenta financiera...
       ssn_label_html: Número de Seguro Social %{tooltip}
       state: Estado
-      use_ccn: Proporcione el número de tarjeta de crédito >
       use_financial_account: "¿No tiene una tarjeta de crédito?"
       zipcode: Código postal
     index:

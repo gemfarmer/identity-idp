@@ -10,7 +10,9 @@ feature 'IdV session', idv_job: true do
     end
 
     scenario 'decline to verify identity' do
+      click_idv_begin
       click_link t('links.cancel')
+
       expect(page).to have_content(t('idv.titles.cancel'))
     end
 
@@ -134,7 +136,7 @@ feature 'IdV session', idv_job: true do
       expect(page).to have_selector("input[value='#{mortgage_value}']")
 
       # try again with CCN
-      click_link t('idv.form.use_ccn')
+      click_link t('idv.messages.finance.no_account')
       fill_in :idv_finance_form_ccn, with: second_ccn_value
       click_idv_continue
 

@@ -64,7 +64,6 @@ fr:
       select_financial_account: Sélectionnez un compte bancaire…
       ssn_label_html: Numéro de sécurité sociale %{tooltip}
       state: État
-      use_ccn: Fournissez un numéro de carte de crédit
       use_financial_account: Vous n'avez pas de carte de crédit?
       zipcode: Code ZIP
     index:

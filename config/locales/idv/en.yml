@@ -64,7 +64,6 @@ en:
       select_financial_account: Select a financial account…
       ssn_label_html: Social Security Number %{tooltip}
       state: State
-      use_ccn: Provide credit card number >
       use_financial_account: Don't have a credit card?
       zipcode: ZIP Code
     index:

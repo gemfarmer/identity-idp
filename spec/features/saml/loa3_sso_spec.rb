@@ -28,6 +28,11 @@ feature 'LOA3 Single Sign On', idv_job: true do
     click_link t('idv.buttons.return_to_account')
   end
 
+  def cancel_verification
+    click_on t('links.cancel')
+    click_on t('idv.buttons.cancel')
+  end
+
   def sign_out_user
     first(:link, t('links.sign_out')).click
     click_submit_default
@@ -76,8 +81,11 @@ feature 'LOA3 Single Sign On', idv_job: true do
         loa3_sp_session
 
         visit verify_path
-        click_on t('links.cancel')
-        click_on t('idv.buttons.cancel')
+
+        expect(page).not_to have_content(t('links.cancel'))
+
+        click_idv_begin
+        cancel_verification
 
         expect(current_path).to eq(manage_personal_key_path)
       end
@@ -87,8 +95,10 @@ feature 'LOA3 Single Sign On', idv_job: true do
         loa3_sp_session
 
         visit verify_path
-        click_on t('links.cancel')
-        click_on t('idv.buttons.cancel')
+        expect(page).not_to have_content(t('links.cancel'))
+
+        click_idv_begin
+        cancel_verification
 
         expect(current_path).to match(account_path)
       end
@@ -101,6 +111,10 @@ feature 'LOA3 Single Sign On', idv_job: true do
         loa3_sp_session
 
         visit verify_path
+
+        expect(page).not_to have_content(t('links.cancel'))
+
+        click_idv_begin
         click_idv_cancel
 
         expect(current_path).to eq(manage_personal_key_path)
@@ -111,6 +125,9 @@ feature 'LOA3 Single Sign On', idv_job: true do
         loa3_sp_session
 
         visit verify_path
+        expect(page).not_to have_content(t('links.cancel'))
+
+        click_idv_begin
         click_idv_cancel
 
         expect(current_url).to eq(account_url)
