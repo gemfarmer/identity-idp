@@ -8,8 +8,9 @@ fr:
       modal_header: Souhaitez-vous vraiment annuler?
       success: Le dossier contenant votre information a été effacé
       warning_header: Si vous annulez maintenant
-      warning_disclaimer: NOT TRANSLATED YET
+      warning_qualifier: NOT TRANSLATED YET
       warning_point: NOT TRANSLATED YET
+      warning_point_no_sp: NOT TRANSLATED YET
       warning_points:
       - Vous n'aurez pas de compte login.gov
       - NOT TRANSLATED YET

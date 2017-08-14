@@ -8,9 +8,10 @@ en:
       modal_header: Are you sure you want to cancel?
       success: Your account has been deleted. We did not save your information.
       warning_header: If you cancel now
-      warning_disclaimer: may not
-      warning_point: You DISCLAIMER be able to access your information at SP_NAME
+      warning_qualifier: may not
+      warning_point: You %{warning_qualifier} be able to access your information at %{sp_name}
         online.
+      warning_point_no_sp: You %{warning_qualifier} be able to access your information online.
       warning_points:
       - You won’t have a login.gov account.
       - Login.gov won't store your email address, password, and phone number.

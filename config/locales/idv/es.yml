@@ -18,7 +18,8 @@ es:
       modal_header: "¿Está seguro que desea cancelar?"
       warning_header: Si usted cancela ahora
       warning_disclaimer: NOT TRANSLATED YET
-      warning_point: NOT TRANSLATED YET
+      warning_point: NOT TRANSLATED YET.
+      warning_point_no_sp: NOT TRANSLATED YET
       warning_points:
       - NOT TRANSLATED YET
       - NOT TRANSLATED YET

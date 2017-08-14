@@ -130,14 +130,12 @@ feature 'LOA3 Single Sign On', idv_job: true do
       )
     end
 
-    let(:return_to_verify_button) {
-      t('idv.buttons.return_to_verify')
-    }
+    let(:return_to_verify_button) { t('idv.buttons.return_to_verify') }
 
     context 'having selected phone option' do
       let(:phone_confirmed) { false }
 
-      it 'there is a button that will return to the activation option page' do
+      it 'there is a button that will return the user to the activation option page' do
         user = create(:user, :signed_up)
         perform_id_verification_without_activation(user)
         click_idv_address_choose_phone
@@ -153,7 +151,7 @@ feature 'LOA3 Single Sign On', idv_job: true do
     context 'having selected mail option' do
       let(:phone_confirmed) { false }
 
-      it 'there is a button that will return to the activation option page' do
+      it 'there is a button that will return the user to the activation option page' do
         user = create(:user, :signed_up)
         perform_id_verification_without_activation(user)
         click_idv_address_choose_usps

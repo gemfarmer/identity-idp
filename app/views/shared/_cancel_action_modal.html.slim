@@ -1,8 +1,7 @@
 - app_flow = idv ? 'idv' : 'sign_up'
-- warning_disclaimer = t("#{app_flow}.cancel.warning_disclaimer")
-- warning_point = t("#{app_flow}.cancel.warning_point")
-- warning_point = warning_disclaimer ? warning_point.gsub('DISCLAIMER', "<span class='italic'>#{warning_disclaimer}</span>") : warning_point
-- warning_point = sp_name ? warning_point.gsub('SP_NAME', "<span class='bold'>#{sp_name}</span>") : warning_point
+- warning_qualifier = t("#{app_flow}.cancel.warning_qualifier")
+- warning_qualifier = "<span class='italic'>#{warning_qualifier}</span>"
+
 #cancel-action-modal.display-none
   = render layout: 'shared/modal_layout' do
     .p3.sm-p4.cntnr-xxskinny.border-box.bg-white.rounded-xxl.lg.modal-warning
@@ -13,7 +12,11 @@
           = t("#{app_flow}.cancel.warning_header")
         ul.px2.yellow-dots
           li.mb2
-            = warning_point.html_safe
+            - if sp_name
+              - sp_name = "<span class='bold'>#{sp_name}</span>"
+              = t("#{app_flow}.cancel.warning_point", sp_name: sp_name, warning_qualifier: warning_qualifier).html_safe
+            - else
+              = t("#{app_flow}.cancel.warning_point_no_sp", warning_qualifier: warning_qualifier).html_safe
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point
