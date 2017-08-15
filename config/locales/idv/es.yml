@@ -4,7 +4,7 @@ es:
     buttons:
       activate_by_mail: Acitive por email
       activate_by_phone: Active por teléfono
-      back: NOT TRANSLATED YET
+      back: Regresa
       cancel: Cancele y regrese a su perfil
       continue: Continúe la verificación de identidad
       help: Continúe con el Centro de Ayuda
@@ -13,17 +13,17 @@ es:
         send: Enviar una carta
       return_to_account: NOT TRANSLATED YET
       return_to_sp: NOT TRANSLATED YET
-      return_to_verify: NOT TRANSLATED YET
+      return_to_verify: "‹ Volver a ver todas las opciones para probar mi identidad"
       send_confirmation_code: NOT TRANSLATED YET
     cancel:
       modal_header: "¿Está seguro que desea cancelar?"
       warning_header: Si usted cancela ahora
-      warning_disclaimer: NOT TRANSLATED YET
-      warning_point: NOT TRANSLATED YET.
-      warning_point_no_sp: NOT TRANSLATED YET
+      warning_disclaimer: no pueda
+      warning_point: Login.gov no podrá verificar su identidad y es posible que %{warning_qualifier} acceder a su información en %{sp_name}.
+      warning_point_no_sp: Login.gov no podrá verificar su identidad y es posible que %{warning_qualifier} acceder a su información.
       warning_points:
-      - NOT TRANSLATED YET
-      - NOT TRANSLATED YET
+      - Login.gov no mantendrá un registro de su nombre, dirección, fecha de nacimiento, o número de Seguro Social.
+      - Aún tendrá una cuenta de login.gov para su dirección de correo electrónico. Puede administrar esa cuenta en su página de perfil.
     errors:
       bad_dob: Su fecha de nacimiento debe ser una fecha válida.
       duplicate_ssn: Ya existe una cuenta con la información que proporcionó.
@@ -100,7 +100,7 @@ es:
       activated_html: Su identidad ha sido verificada. Si necesita cambiar la información
         verificada, por favor, %{link}.
       activated_link: Contáctenos
-      back: NOT TRANSLATED YET
+      back: Volver a la página anterior
       cancel: Para continuar %{app} necesita verificar su identidad. Necesitamos recopilar
         información personal básica, así como su información financiera para completar
         este proceso. Si no tiene la información que necesitamos en este momento,
@@ -131,7 +131,7 @@ es:
       loading: NOT TRANSLATED YET
       mail_sent: Su carta está en camino
       otp_delivery_method:
-        phone_number_html: NOT TRANSLATED YET
+        phone_number_html: Enviaremos un código a <strong>%{phone}</strong>
       personal_details_verified: "¡Detalles personales verificados!"
       personal_key: Esta es su nueva clave personal. Escríbala y guárdela en un lugar
         seguro. La necesitará si pierde su contraseña.
@@ -215,7 +215,7 @@ es:
       mail:
         resend: "¿Desea otra carta?"
         verify: "¿Desea una carta?"
-      otp_delivery_method: NOT TRANSLATED YET
+      otp_delivery_method: Obtener un código por teléfono
       phone: Número de teléfono del registro
       review: Revise y envíe
       select_verification: Active su cuenta

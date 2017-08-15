@@ -4,7 +4,7 @@ fr:
     buttons:
       activate_by_mail: Activer par la poste
       activate_by_phone: Activer par téléphone
-      back: NOT TRANSLATED YET
+      back: Retourner
       cancel: Annuler et retourner à votre profil
       continue: Continuer la vérification d'identité
       help: Continuer jusqu'au Centre d'aide
@@ -13,17 +13,17 @@ fr:
         send: Envoyer une lettre
       return_to_account: NOT TRANSLATED YET
       return_to_sp: NOT TRANSLATED YET
-      return_to_verify: NOT TRANSLATED YET
+      return_to_verify: "‹ Revenez à toutes les options pour prouver mon identité"
       send_confirmation_code: NOT TRANSLATED YET
     cancel:
       modal_header: Souhaitez-vous vraiment annuler?
       warning_header: Si vous annulez maintenant
-      warning_disclaimer: NOT TRANSLATED YET
-      warning_point: NOT TRANSLATED YET
-      warning_point_no_sp: NOT TRANSLATED YET
+      warning_disclaimer: peut-être pas
+      warning_point: Login.gov ne pourra pas vérifier votre identité et vous ne pourrez %{warning_qualifier} accéder à vos informations au %{sp_name}.
+      warning_point_no_sp: Login.gov ne pourra pas vérifier votre identité et vous ne pourrez %{warning_qualifier} accéder à vos informations.
       warning_points:
-      - NOT TRANSLATED YET
-      - NOT TRANSLATED YET
+      - Login.gov ne tiendra pas un registre de votre nom, adresse, date de naissance ou numéro de Sécurité Sociale.
+      - Vous aurez toujours un compte login.gov pour votre adresse e-mail. Vous pouvez gérer ce compte sur votre page de profil.
     errors:
       bad_dob: Votre date de naissance doit être une date valide.
       duplicate_ssn: Un compte existe déjà avec l'information que vous avez fournie.
@@ -103,7 +103,7 @@ fr:
       activated_html: Votre identité a été vérifiée. Si vous souhaitez modifier votre
         information vérifiée, veuillez %{link}.
       activated_link: communiquer avec nous
-      back: NOT TRANSLATED YET
+      back: Retour à la page précédente
       cancel: Pour continuer, %{app} doit vérifier votre identité. Nous devons recueillir
         quelques informations personnelles de base ainsi que certaines informations
         financières pour compléter ce processus. Si vous n'avez pas cette information
@@ -138,7 +138,7 @@ fr:
       loading: NOT TRANSLATED YET
       mail_sent: Votre lettre est en route
       otp_delivery_method:
-        phone_number_html: NOT TRANSLATED YET
+        phone_number_html: Nous enverrons un code à <strong>%{phone}</strong>
       personal_details_verified: Information personnelle vérifiée!
       personal_key: Il s'agit de votre nouvelle clé personnelle. Notez-la et conservez-la
         dans un endroit sécuritaire. Vous en aurez besoin si vous perdez votre mot
@@ -226,7 +226,7 @@ fr:
       mail:
         resend: Vous voulez une autre lettre?
         verify: Vous voulez une lettre?
-      otp_delivery_method: NOT TRANSLATED YET
+      otp_delivery_method: Obtenir un code par téléphone
       phone: Numéro de téléphone enregistré
       review: Réviser et soumettre
       select_verification: Activer votre compte

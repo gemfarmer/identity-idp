@@ -8,11 +8,11 @@ fr:
       modal_header: Souhaitez-vous vraiment annuler?
       success: Le dossier contenant votre information a été effacé
       warning_header: Si vous annulez maintenant
-      warning_qualifier: NOT TRANSLATED YET
-      warning_point: NOT TRANSLATED YET
-      warning_point_no_sp: NOT TRANSLATED YET
+      warning_qualifier: peut-être pas
+      warning_point: Vous ne pourrez %{warning_qualifier} accéder à vos informations à %{sp_name} en ligne.
+      warning_point_no_sp: Vous ne pourrez %{warning_qualifier} accéder à vos informations en ligne.
       warning_points:
-      - Vous n'aurez pas de compte login.gov
-      - NOT TRANSLATED YET
+      - Vous n'aurez pas de compte login.gov.
+      - Login.gov ne stockera pas votre adresse e-mail, votre mot de passe et votre numéro de téléphone.
     registrations:
       create_account: Créer un compte

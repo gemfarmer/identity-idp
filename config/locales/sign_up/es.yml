@@ -8,11 +8,11 @@ es:
       modal_header: "¿Está seguro de que desea cancelar?"
       success: Su cuenta ha sido eliminada. No guardamos su información.
       warning_header: Si cancela ahora
-      warning_qualifier: NOT TRANSLATED YET
-      warning_point: NOT TRANSLATED YET
-      warning_point_no_sp: NOT TRANSLATED YET
+      warning_qualifier: Es posible que no pueda
+      warning_point: "%{warning_qualifier} acceder a su información en %{sp_name} en línea."
+      warning_point_no_sp: "%{warning_qualifier} acceder a su información en línea."
       warning_points:
-      - No tendrá una cuenta de login.gov
-      - NOT TRANSLATED YET
+      - No tendrá una cuenta de login.gov.
+      - Login.gov no almacenará su dirección de correo electrónico, contraseña y número de teléfono.
     registrations:
       create_account: Crear una cuenta
