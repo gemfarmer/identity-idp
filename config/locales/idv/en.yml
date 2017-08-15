@@ -4,6 +4,7 @@ en:
     buttons:
       activate_by_mail: Activate by mail
       activate_by_phone: Activate by phone
+      back: Go back
       cancel: Cancel and return to your profile
       continue: Continue identity verification
       help: Continue to Help Center

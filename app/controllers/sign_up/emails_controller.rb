@@ -10,6 +10,7 @@ module SignUp
         @register_user_email_form = RegisterUserEmailForm.new
         @register_user_email_form.user.email = email
 
+
         render :show, locals: { email: email }
       end
     end

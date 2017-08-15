@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return accordion;
   });
+
+  const backButtons = document.querySelectorAll('.back-button');
+
+  backButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      history.back(-1);
+    });
+  });
 });
 
 export {
