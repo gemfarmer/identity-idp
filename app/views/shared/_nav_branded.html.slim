@@ -1,11 +1,11 @@
 nav.nav-branded.vertical-align.bg-light-blue.center.relative
-  - unless @hide_back_button
+  - if @hide_back_button
     .z1.absolute.top-space-1.left-space-2.sm-top-space-2.xs-hide.sm-show
       = button_tag class: 'btn btn-primary btn-small bg-gray white flex flex-center back-button'
         = image_tag(asset_url('chevron-left.svg'), height: 24)
         = t('idv.buttons.back')
   = image_tag(asset_url('logo.svg'), height: 14,
-    alt: 'Back to previous page')
+    alt: t('idv.messages.back'))
   .px-12p.inline-block
     span.absolute.top-0.bottom-0.border-right.my1.sm-my2
   = image_tag(asset_url("sp-logos/#{decorated_session.sp_logo}"), height: 40,

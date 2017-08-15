@@ -102,6 +102,7 @@ en:
       activated_html: Your identity has been verified. If you need to change your
         verified information, please %{link}.
       activated_link: contact us
+      back: Back to previous page
       cancel: To continue, %{app} needs to verify your identity. We need to collect
         some basic personal information as well as some financial information from
         you to complete this process. If you don’t have the information we need at
