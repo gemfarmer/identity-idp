@@ -75,6 +75,22 @@ feature 'LOA3 Single Sign On', idv_job: true do
 
   context 'canceling verification' do
     context 'with js', js: true do
+
+      let(:warning_qualifier) { t('idv.cancel.warning_qualifier') }
+      let(:sp_name) { 'Your friendly Government Agency' }
+
+      it 'does not show the service provider name if not signed up via a service provider' do
+        sign_in_and_2fa_user
+        loa3_sp_session
+
+        visit verify_path
+        click_idv_begin
+        click_on t('links.cancel')
+
+        modal = page.find('.modal-warning')
+        expect(modal).to have_content(t('idv.cancel.warning_point_no_sp', warning_qualifier: warning_qualifier, sp_name: sp_name))
+      end
+
       it 'returns user to personal key page if they sign up via loa3' do
         user = create(:user, phone: '1 (111) 111-1111', personal_key: nil)
         sign_in_with_warden(user)
