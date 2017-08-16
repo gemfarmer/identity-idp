@@ -20,8 +20,8 @@ en:
       warning_qualifier: may not
       warning_point: Login.gov won't be able to verify your identity and you %{warning_qualifier}
         be able to access your information at %{sp_name}.
-      warning_point_no_sp: Login.gov won't be able to verify your identity and you %{warning_qualifier}
-        be able to access your information.
+      warning_point_no_sp: Login.gov won't be able to verify your identity and you
+        %{warning_qualifier} be able to access your information.
       warning_points:
       - Login.gov won't keep a record of your name, address, birth date, or Social
         Security number.

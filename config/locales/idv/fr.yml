@@ -17,12 +17,16 @@ fr:
     cancel:
       modal_header: Souhaitez-vous vraiment annuler?
       warning_header: Si vous annulez maintenant
-      warning_disclaimer: peut-être pas
-      warning_point: Login.gov ne pourra pas vérifier votre identité et vous ne pourrez %{warning_qualifier} accéder à vos informations au %{sp_name}.
-      warning_point_no_sp: Login.gov ne pourra pas vérifier votre identité et vous ne pourrez %{warning_qualifier} accéder à vos informations.
+      warning_qualifier: peut-être pas
+      warning_point: Login.gov ne pourra pas vérifier votre identité et vous ne pourrez
+        %{warning_qualifier} accéder à vos informations au %{sp_name}.
+      warning_point_no_sp: Login.gov ne pourra pas vérifier votre identité et vous
+        ne pourrez %{warning_qualifier} accéder à vos informations.
       warning_points:
-      - Login.gov ne tiendra pas un registre de votre nom, adresse, date de naissance ou numéro de Sécurité Sociale.
-      - Vous aurez toujours un compte login.gov pour votre adresse e-mail. Vous pouvez gérer ce compte sur votre page de profil.
+      - Login.gov ne tiendra pas un registre de votre nom, adresse, date de naissance
+        ou numéro de Sécurité Sociale.
+      - Vous aurez toujours un compte login.gov pour votre adresse e-mail. Vous pouvez
+        gérer ce compte sur votre page de profil.
     errors:
       bad_dob: Votre date de naissance doit être une date valide.
       duplicate_ssn: Un compte existe déjà avec l'information que vous avez fournie.
