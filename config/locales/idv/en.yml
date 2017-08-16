@@ -4,7 +4,6 @@ en:
     buttons:
       activate_by_mail: Activate by mail
       activate_by_phone: Activate by phone
-      back: Go back
       cancel: Cancel and return to your profile
       continue: Continue identity verification
       help: Continue to Help Center
@@ -102,7 +101,6 @@ en:
       activated_html: Your identity has been verified. If you need to change your
         verified information, please %{link}.
       activated_link: contact us
-      back: Back to previous page
       cancel: To continue, %{app} needs to verify your identity. We need to collect
         some basic personal information as well as some financial information from
         you to complete this process. If you don’t have the information we need at

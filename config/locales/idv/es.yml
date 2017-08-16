@@ -4,7 +4,6 @@ es:
     buttons:
       activate_by_mail: Acitive por email
       activate_by_phone: Active por teléfono
-      back: Regresa
       cancel: Cancele y regrese a su perfil
       continue: Continúe la verificación de identidad
       help: Continúe con el Centro de Ayuda
@@ -100,7 +99,6 @@ es:
       activated_html: Su identidad ha sido verificada. Si necesita cambiar la información
         verificada, por favor, %{link}.
       activated_link: Contáctenos
-      back: Volver a la página anterior
       cancel: Para continuar %{app} necesita verificar su identidad. Necesitamos recopilar
         información personal básica, así como su información financiera para completar
         este proceso. Si no tiene la información que necesitamos en este momento,

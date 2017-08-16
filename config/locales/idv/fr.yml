@@ -4,7 +4,6 @@ fr:
     buttons:
       activate_by_mail: Activer par la poste
       activate_by_phone: Activer par téléphone
-      back: Retourner
       cancel: Annuler et retourner à votre profil
       continue: Continuer la vérification d'identité
       help: Continuer jusqu'au Centre d'aide
@@ -103,7 +102,6 @@ fr:
       activated_html: Votre identité a été vérifiée. Si vous souhaitez modifier votre
         information vérifiée, veuillez %{link}.
       activated_link: communiquer avec nous
-      back: Retour à la page précédente
       cancel: Pour continuer, %{app} doit vérifier votre identité. Nous devons recueillir
         quelques informations personnelles de base ainsi que certaines informations
         financières pour compléter ce processus. Si vous n'avez pas cette information
