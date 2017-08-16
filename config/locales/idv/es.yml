@@ -5,7 +5,7 @@ es:
       activate_by_mail: Acitive por email
       activate_by_phone: Active por teléfono
       cancel: Cancele y regrese a su perfil
-      continue: Continúe la verificación de identidad
+      continue: Continuar comprobando su identidad
       help: Continúe con el Centro de Ayuda
       mail:
         resend: Enviar otra carta
@@ -25,8 +25,7 @@ es:
       warning_points:
       - Login.gov no mantendrá un registro de su nombre, dirección, fecha de nacimiento,
         o número de Seguro Social.
-      - Aún tendrá una cuenta de login.gov para su dirección de correo electrónico.
-        Puede administrar esa cuenta en su página de perfil.
+      - Aún tendrá una cuenta de login.gov. Puede administrar o eliminar su cuenta de su perfil.
     errors:
       bad_dob: Su fecha de nacimiento debe ser una fecha válida.
       duplicate_ssn: Ya existe una cuenta con la información que proporcionó.
@@ -43,7 +42,8 @@ es:
         ssn: 'Su número de Seguro Social debe ser ingresado como ### - ## - ####'
         zipcode: 'Su código postal debe ser ingresado como #####-####'
     form:
-      activate_by_mail: Activar mi cuenta por correo.
+      activate_by_mail: Obtener un código por carta.
+      activate_by_phone: Verifique su dirección por teléfono.
       address1: Dirección de calle 1
       address2: Dirección de calle 2 (opcional)
       auto_loan: Número de cuenta de préstamo de auto
@@ -114,8 +114,10 @@ es:
       dupe_ssn2_html: Por favor %{link} con el email que utilizó originalmente.
       dupe_ssn2_link: Cerrar ahora y volver a iniciar sesión
       finance:
-        disclaimer: Al continuar acepta que %{app_name} compare la información de
-          la cuenta que proporciona con fuentes de terceros para verificar su identidad.
+        disclaimer_qualifier: Nunca
+        disclaimer: Al continuar, acepta que login.gov compara la información de la
+          cuenta que proporciona con fuentes de terceros de confianza para verificar
+          su identidad. %{disclaimer_qualifier} le cobraremos.
         hint: Puede utilizar Mastercard, Visa, Diner's Club o JCB.
         intro_account: Ayúdenos a verificar su identidad proporcionando información
           sobre un préstamo de auto, una hipoteca o un número de préstamo sobre el
@@ -216,7 +218,7 @@ es:
       intro: Ayúdenos a identificarlo
       mail:
         resend: "¿Desea otra carta?"
-        verify: "¿Desea una carta?"
+        verify:  Verifique su dirección por carta
       otp_delivery_method: Obtener un código por teléfono
       phone: Número de teléfono del registro
       review: Revise y envíe

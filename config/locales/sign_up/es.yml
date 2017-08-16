@@ -3,7 +3,7 @@ es:
   sign_up:
     buttons:
       cancel: Cancelar y borrar su información
-      continue: Continuar la creación de cuenta
+      continue: Continuar creando una cuenta
     cancel:
       modal_header: "¿Está seguro de que desea cancelar?"
       success: Su cuenta ha sido eliminada. No guardamos su información.

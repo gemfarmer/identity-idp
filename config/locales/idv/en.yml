@@ -5,7 +5,7 @@ en:
       activate_by_mail: Activate by mail
       activate_by_phone: Activate by phone
       cancel: Cancel and return to your profile
-      continue: Continue identity verification
+      continue: Continue verifying your identity
       help: Continue to Help Center
       mail:
         resend: Send another letter
@@ -25,8 +25,8 @@ en:
       warning_points:
       - Login.gov won't keep a record of your name, address, birth date, or Social
         Security number.
-      - You’ll still have a login.gov account for your email address. You can manage
-        that account on your profile page.
+      - You’ll still have a login.gov account. You can manage or delete your account from
+        your profile.
     errors:
       bad_dob: Your date of birth must be a valid date.
       duplicate_ssn: An account already exists with the information you provided.
@@ -42,7 +42,8 @@ en:
         ssn: 'Your Social Security Number must be entered in as ###-##-####'
         zipcode: 'Your zipcode must be entered in as #####-####'
     form:
-      activate_by_mail: Activate my account by mail.
+      activate_by_mail: Get a code by letter.
+      activate_by_phone: Verify your address by phone.
       address1: Street address 1
       address2: Street address 2 (optional)
       auto_loan: Auto loan account number
@@ -113,9 +114,10 @@ en:
       dupe_ssn2_html: Please %{link} with the email address you originally used.
       dupe_ssn2_link: sign out now and sign back in
       finance:
-        disclaimer: By continuing, you agree to let %{app_name} compare the account
-          information you provide with third-party sources in order to verify your
-          identity.
+        disclaimer_qualifier: never
+        disclaimer: By continuing, you agree to allow %{app_name} to compare the account
+          information you provide with trusted third-party sources in order to verify your
+          identity. We will %{disclaimer_qualifier} charge you.
         hint: You can use Mastercard, Visa, Diner's Club, or JCB.
         intro_account: Help us verify your identity by providing an auto loan, mortgage,
           or home equity loan number.
@@ -210,7 +212,7 @@ en:
       intro: Help us identify you
       mail:
         resend: Want another letter?
-        verify: Want a letter?
+        verify: Verify your address by letter
       otp_delivery_method: Get a code by phone
       phone: Phone number of record
       review: Review and submit

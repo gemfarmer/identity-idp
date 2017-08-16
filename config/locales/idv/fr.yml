@@ -5,7 +5,7 @@ fr:
       activate_by_mail: Activer par la poste
       activate_by_phone: Activer par téléphone
       cancel: Annuler et retourner à votre profil
-      continue: Continuer la vérification d'identité
+      continue: Continuez à vérifier votre identité
       help: Continuer jusqu'au Centre d'aide
       mail:
         resend: Envoyer une autre lettre
@@ -25,8 +25,8 @@ fr:
       warning_points:
       - Login.gov ne tiendra pas un registre de votre nom, adresse, date de naissance
         ou numéro de Sécurité Sociale.
-      - Vous aurez toujours un compte login.gov pour votre adresse e-mail. Vous pouvez
-        gérer ce compte sur votre page de profil.
+      - Vous aurez toujours un compte login.gov. Vous pouvez gérer ou supprimer votre
+        compte de votre profil.
     errors:
       bad_dob: Votre date de naissance doit être une date valide.
       duplicate_ssn: Un compte existe déjà avec l'information que vous avez fournie.
@@ -46,7 +46,8 @@ fr:
           ###-##-####'
         zipcode: 'Votre code ZIP doit être inscrit de cette façon : #####-####'
     form:
-      activate_by_mail: Activer mon compte par la poste.
+      activate_by_mail: Obtenez un code par lettre.
+      activate_by_phone: Vérifiez votre adresse par téléphone.
       address1: Adresse 1
       address2: Adresse 2 (optional)
       auto_loan: Numéro du prêt automobile
@@ -118,9 +119,11 @@ fr:
         originalement.
       dupe_ssn2_link: déconnectez-vous puis connectez-vous à nouveau
       finance:
-        disclaimer: En continuant, vous acceptez que %{app_name} compare l'information
-          du compte que vous avez fournie avec des sources tiers afin de vérifier
-          votre identité.
+        disclaimer_qualifier: ne
+        disclaimer: En continuant, vous acceptez de permettre à login.gov de comparer
+          les informations de compte que vous fournissez avec des sources tierces de
+          confiance afin de vérifier votre identité. Nous %{disclaimer_qualifier} vous
+          facturerons jamais.
         hint: Vous pouvez utiliser Mastercard, Visa, Diner's Club, ou JCB.
         intro_account: Aidez-nous à vérifier votre identité en fournissant le numéro
           de votre prêt automobile, de votre prêt hypothécaire, ou de votre crédit
@@ -227,7 +230,7 @@ fr:
       intro: Aidez-nous à vous identifier
       mail:
         resend: Vous voulez une autre lettre?
-        verify: Vous voulez une lettre?
+        verify: Vérifiez votre adresse par lettre
       otp_delivery_method: Obtenir un code par téléphone
       phone: Numéro de téléphone enregistré
       review: Réviser et soumettre

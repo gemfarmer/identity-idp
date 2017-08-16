@@ -3,7 +3,7 @@ fr:
   sign_up:
     buttons:
       cancel: Annuler et supprimer votre information
-      continue: Continuer la création du compte
+      continue: Continuer à créer un compte
     cancel:
       modal_header: Souhaitez-vous vraiment annuler?
       success: Le dossier contenant votre information a été effacé

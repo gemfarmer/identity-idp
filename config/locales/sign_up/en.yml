@@ -3,7 +3,7 @@ en:
   sign_up:
     buttons:
       cancel: Cancel and delete your information
-      continue: Continue account creation
+      continue: Continue creating an account
     cancel:
       modal_header: Are you sure you want to cancel?
       success: Your account has been deleted. We did not save your information.
