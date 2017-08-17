@@ -14,9 +14,11 @@
           li.mb2
             - if sp_name
               - sp_name = "<span class='bold'>#{sp_name}</span>"
-              = t("#{app_flow}.cancel.warning_point", sp_name: sp_name, warning_qualifier: warning_qualifier).html_safe
+              = t("#{app_flow}.cancel.warning_point", sp_name: sp_name,
+                warning_qualifier: warning_qualifier).html_safe
             - else
-              = t("#{app_flow}.cancel.warning_point_no_sp", warning_qualifier: warning_qualifier).html_safe
+              = t("#{app_flow}.cancel.warning_point_no_sp",
+                warning_qualifier: warning_qualifier).html_safe
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point

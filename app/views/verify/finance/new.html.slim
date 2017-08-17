@@ -25,7 +25,8 @@ p.mt-tiny.mb0
 
       .mb2.mt3
         em
-          - disclaimer_qualifier = "<span class='bold'>#{t('idv.messages.finance.disclaimer_qualifier')}</span>"
+          - disclaimer_qualifier = t('idv.messages.finance.disclaimer_qualifier')
+          - disclaimer_qualifier = "<span class='bold'>#{disclaimer_qualifier}</span>"
           = t('idv.messages.finance.disclaimer',
             app_name: APP_NAME,
             disclaimer_qualifier: disclaimer_qualifier).html_safe

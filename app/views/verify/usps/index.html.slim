@@ -13,8 +13,9 @@
 = button_to @decorated_usps.button, verify_usps_path, method: 'put',
   class: 'btn btn-primary btn-wide', form_class: 'inline-block mr2 mb2'
 
-div.border-top.pt1
-  = t('idv.form.no_alternate_phone_html', link: link_to(t('idv.form.activate_by_phone'), verify_usps_path))
+.border-top.pt1
+  = t('idv.form.no_alternate_phone_html',
+    link: link_to(t('idv.form.activate_by_phone'), verify_usps_path))
 
 .mt2
   = link_to t('idv.buttons.return_to_verify'), verify_address_path
