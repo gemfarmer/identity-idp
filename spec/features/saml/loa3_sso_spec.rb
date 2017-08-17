@@ -75,7 +75,6 @@ feature 'LOA3 Single Sign On', idv_job: true do
 
   context 'canceling verification' do
     context 'with js', js: true do
-
       let(:warning_qualifier) { t('idv.cancel.warning_qualifier') }
       let(:sp_name) { 'Your friendly Government Agency' }
 
@@ -88,7 +87,13 @@ feature 'LOA3 Single Sign On', idv_job: true do
         click_on t('links.cancel')
 
         modal = page.find('.modal-warning')
-        expect(modal).to have_content(t('idv.cancel.warning_point_no_sp', warning_qualifier: warning_qualifier, sp_name: sp_name))
+        expect(modal).to have_content(
+          t(
+            'idv.cancel.warning_point_no_sp',
+            warning_qualifier: warning_qualifier,
+            sp_name: sp_name
+          )
+        )
       end
 
       it 'returns user to personal key page if they sign up via loa3' do
