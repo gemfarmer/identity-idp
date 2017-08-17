@@ -25,8 +25,8 @@ en:
       warning_points:
       - Login.gov won't keep a record of your name, address, birth date, or Social
         Security number.
-      - You’ll still have a login.gov account. You can manage or delete your account from
-        your profile.
+      - You’ll still have a login.gov account. You can manage or delete your account
+        from your profile.
     errors:
       bad_dob: Your date of birth must be a valid date.
       duplicate_ssn: An account already exists with the information you provided.
@@ -116,8 +116,8 @@ en:
       finance:
         disclaimer_qualifier: never
         disclaimer: By continuing, you agree to allow %{app_name} to compare the account
-          information you provide with trusted third-party sources in order to verify your
-          identity. We will %{disclaimer_qualifier} charge you.
+          information you provide with trusted third-party sources in order to verify
+          your identity. We will %{disclaimer_qualifier} charge you.
         hint: You can use Mastercard, Visa, Diner's Club, or JCB.
         intro_account: Help us verify your identity by providing an auto loan, mortgage,
           or home equity loan number.

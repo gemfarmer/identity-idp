@@ -25,7 +25,8 @@ es:
       warning_points:
       - Login.gov no mantendrá un registro de su nombre, dirección, fecha de nacimiento,
         o número de Seguro Social.
-      - Aún tendrá una cuenta de login.gov. Puede administrar o eliminar su cuenta de su perfil.
+      - Aún tendrá una cuenta de login.gov. Puede administrar o eliminar su cuenta
+        de su perfil.
     errors:
       bad_dob: Su fecha de nacimiento debe ser una fecha válida.
       duplicate_ssn: Ya existe una cuenta con la información que proporcionó.
@@ -218,7 +219,7 @@ es:
       intro: Ayúdenos a identificarlo
       mail:
         resend: "¿Desea otra carta?"
-        verify:  Verifique su dirección por carta
+        verify: Verifique su dirección por carta
       otp_delivery_method: Obtener un código por teléfono
       phone: Número de teléfono del registro
       review: Revise y envíe

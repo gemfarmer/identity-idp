@@ -121,9 +121,9 @@ fr:
       finance:
         disclaimer_qualifier: ne
         disclaimer: En continuant, vous acceptez de permettre à login.gov de comparer
-          les informations de compte que vous fournissez avec des sources tierces de
-          confiance afin de vérifier votre identité. Nous %{disclaimer_qualifier} vous
-          facturerons jamais.
+          les informations de compte que vous fournissez avec des sources tierces
+          de confiance afin de vérifier votre identité. Nous %{disclaimer_qualifier}
+          vous facturerons jamais.
         hint: Vous pouvez utiliser Mastercard, Visa, Diner's Club, ou JCB.
         intro_account: Aidez-nous à vérifier votre identité en fournissant le numéro
           de votre prêt automobile, de votre prêt hypothécaire, ou de votre crédit
