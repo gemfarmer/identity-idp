@@ -8,7 +8,9 @@ RSpec.describe ContentHelper do
       it 'returns an array delimited at the value given' do
         example_sentence = 'It is cloudy outside today.'
         split = split_tag(example_sentence, 'cloudy')
-        expect(split).to eq(['It is ', 'cloudy', ' outside today.'])
+        expect(safe_join(split)).to eq(
+          safe_join(['It is ', 'cloudy', ' outside today.'])
+        )
       end
 
       it 'returns the same string if the delimiter is not present' do
@@ -22,7 +24,9 @@ RSpec.describe ContentHelper do
       it 'returns an array delimited at the value given' do
         example_array = ['It is ', 'cloudy', ' outside today.']
         split = split_tag(example_array, 'outside')
-        expect(split).to eq(['It is ', 'cloudy', ' outside today.'])
+        expect(safe_join(split)).to eq(
+          safe_join(['It is ', 'cloudy', ' outside today.'])
+        )
       end
 
       it 'returns the same array if that delimiter is not present' do
