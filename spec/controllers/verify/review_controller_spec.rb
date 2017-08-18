@@ -329,7 +329,7 @@ describe Verify::ReviewController do
         expect(pii.first_name.norm).to eq 'JOSE'
       end
 
-      context 'user picked phone confrimation' do
+      context 'user picked phone confirmation' do
         before do
           idv_session.address_verification_mechanism = 'phone'
           idv_session.vendor_phone_confirmation = true
