@@ -69,7 +69,11 @@ module ApplicationHelper
     end
   end
 
-  def content_tag_safe(tag)
-    tag.to_s.html_safe
+  def split_tag(str, value)
+    if str.is_a? Array
+      str.map { |s| s.partition(value) }.flatten
+    else
+      str.to_s.partition(value)
+    end
   end
 end

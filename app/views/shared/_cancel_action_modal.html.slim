@@ -14,11 +14,13 @@
           li.mb2
             - if sp_name
               - sp_name_tag = content_tag(:span, sp_name, class: 'bold')
-              = content_tag_safe(t("#{app_flow}.cancel.warning_point",
-                sp_name: sp_name_tag, warning_qualifier: warning_qualifier))
+              - warning_point_text = t("#{app_flow}.cancel.warning_point",
+                sp_name: sp_name_tag, warning_qualifier: warning_qualifier)
+              = safe_join(split_tag(split_tag(warning_point_text, sp_name_tag), warning_qualifier))
             - else
-              = content_tag_safe(t("#{app_flow}.cancel.warning_point_no_sp",
-                warning_qualifier: warning_qualifier))
+              - warning_point_text = t("#{app_flow}.cancel.warning_point_no_sp",
+                warning_qualifier: warning_qualifier)
+              = safe_join(split_tag(warning_point_text, warning_qualifier))
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point
