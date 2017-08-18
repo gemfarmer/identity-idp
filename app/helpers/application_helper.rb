@@ -68,4 +68,8 @@ module ApplicationHelper
       t('links.cancel')
     end
   end
+
+  def content_tag_safe(tag)
+    tag.to_s.html_safe
+  end
 end

@@ -1,6 +1,6 @@
 - app_flow = idv ? 'idv' : 'sign_up'
-- warning_qualifier = t("#{app_flow}.cancel.warning_qualifier")
-- warning_qualifier = "<span class='italic'>#{warning_qualifier}</span>"
+- warning_qualifier = content_tag(:span, t("#{app_flow}.cancel.warning_qualifier"),
+  class: 'italic')
 
 #cancel-action-modal.display-none
   = render layout: 'shared/modal_layout' do
@@ -13,12 +13,12 @@
         ul.px2.yellow-dots
           li.mb2
             - if sp_name
-              - sp_name = "<span class='bold'>#{sp_name}</span>"
-              = t("#{app_flow}.cancel.warning_point", sp_name: sp_name,
-                warning_qualifier: warning_qualifier).html_safe
+              - sp_name_tag = content_tag(:span, sp_name, class: 'bold')
+              = content_tag_safe(t("#{app_flow}.cancel.warning_point",
+                sp_name: sp_name_tag, warning_qualifier: warning_qualifier))
             - else
-              = t("#{app_flow}.cancel.warning_point_no_sp",
-                warning_qualifier: warning_qualifier).html_safe
+              = content_tag_safe(t("#{app_flow}.cancel.warning_point_no_sp",
+                warning_qualifier: warning_qualifier))
           - t("#{app_flow}.cancel.warning_points").each do |point|
             li.mb2
               = point

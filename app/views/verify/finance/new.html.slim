@@ -27,9 +27,9 @@ p.mt-tiny.mb0
         em
           - disclaimer_qualifier = t('idv.messages.finance.disclaimer_qualifier')
           - disclaimer_qualifier = "<span class='bold'>#{disclaimer_qualifier}</span>"
-          = t('idv.messages.finance.disclaimer',
+          = content_tag_safe(t('idv.messages.finance.disclaimer',
             app_name: APP_NAME,
-            disclaimer_qualifier: disclaimer_qualifier).html_safe
+            disclaimer_qualifier: disclaimer_qualifier))
 
       = f.button :submit, t('forms.buttons.continue'), class: 'col-6'
 
