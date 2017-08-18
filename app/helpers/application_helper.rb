@@ -68,12 +68,4 @@ module ApplicationHelper
       t('links.cancel')
     end
   end
-
-  def split_tag(str, value)
-    if str.is_a? Array
-      str.map { |s| s.partition(value) }.flatten
-    else
-      str.to_s.partition(value)
-    end
-  end
 end
