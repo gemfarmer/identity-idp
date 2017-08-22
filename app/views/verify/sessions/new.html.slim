@@ -59,7 +59,7 @@ h1.h3.my0 = @view_model.title
       input_html: { class: 'ssn', value: @view_model.idv_form.ssn }
   .mt3
     button type='submit' class='btn btn-primary btn-wide' = t('forms.buttons.continue')
-= render 'shared/cancel', link: verify_cancel_path, decorated_session: decorated_session
+= render 'shared/cancel', link: verify_cancel_path
 = render @view_model.modal_partial, view_model: @view_model
 
 == javascript_include_tag 'misc/previous-address'

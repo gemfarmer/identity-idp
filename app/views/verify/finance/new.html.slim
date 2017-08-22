@@ -34,6 +34,6 @@ p.mt-tiny.mb0
 
       = f.button :submit, t('forms.buttons.continue'), class: 'col-6'
 
-= render 'shared/cancel', link: verify_cancel_path, decorated_session: decorated_session
+= render 'shared/cancel', link: verify_cancel_path
 
 = render @view_model.modal_partial, view_model: @view_model

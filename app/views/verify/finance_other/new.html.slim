@@ -33,5 +33,5 @@ p.mt-tiny.mb0 = t('idv.messages.finance.intro_account')
 p.mb3
   = t('idv.messages.finance.no_account_info')
 
-= render 'shared/cancel', link: verify_cancel_path, decorated_session: decorated_session
+= render 'shared/cancel', link: verify_cancel_path
 = render @view_model.modal_partial, view_model: @view_model
