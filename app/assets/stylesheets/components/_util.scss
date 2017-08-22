@@ -49,3 +49,8 @@
   .sm-left-align { text-align: left; }
   .sm-right-align { text-align: right; }
 }
+
+.sr-only {
+  left: -999em;
+  position: absolute;
+}
