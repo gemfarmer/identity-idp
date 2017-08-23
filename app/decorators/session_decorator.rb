@@ -47,33 +47,16 @@ class SessionDecorator
     warning_qualifier = I18n.t("#{app_flow}.cancel.warning_qualifier")
     warning_qualifier_tag = content_tag(:span, warning_qualifier, class: 'italic')
 
-    if sp_name
-      warning_point_text_t(app_flow, warning_qualifier_tag)
-    else
-      warning_point_text_t_no_sp(app_flow, warning_qualifier_tag)
-    end
+    warning_point_text_t(app_flow, warning_qualifier_tag)
   end
 
   private
 
-  def warning_point_text_t_no_sp(app_flow, warning_qualifier_tag)
+  def warning_point_text_t(app_flow, warning_qualifier_tag)
     warning_point_text = I18n.t(
       "#{app_flow}.cancel.warning_point_no_sp",
       warning_qualifier: warning_qualifier_tag
     )
     safe_join(split_tag(warning_point_text, warning_qualifier_tag))
-  end
-
-  def warning_point_text_t(app_flow, warning_qualifier_tag)
-    sp_name_tag = content_tag(:span, sp_name, class: 'bold')
-    warning_point_text = I18n.t(
-      "#{app_flow}.cancel.warning_point",
-      sp_name: sp_name_tag,
-      warning_qualifier: warning_qualifier_tag
-    )
-    safe_join(split_tag(
-                split_tag(warning_point_text, sp_name_tag),
-                warning_qualifier_tag
-    ))
   end
 end
