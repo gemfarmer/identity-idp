@@ -20,6 +20,7 @@ describe 'users/passwords/edit.html.slim' do
   end
 
   it 'has a localized title' do
+    # byebug
     expect(view).to receive(:title).with(t('titles.edit_info.password'))
 
     render

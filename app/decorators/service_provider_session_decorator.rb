@@ -1,6 +1,7 @@
 class ServiceProviderSessionDecorator
   include Rails.application.routes.url_helpers
   include LocaleHelper
+  include ContentHelper
 
   DEFAULT_LOGO = 'generic.svg'.freeze
 
@@ -70,6 +71,24 @@ class ServiceProviderSessionDecorator
   def cancel_link_path
     sign_up_start_path(request_id: sp_session[:request_id])
   end
+
+  # def warning_point_text(app_flow)
+  #   warning_qualifier = I18n.t("#{app_flow}.cancel.warning_qualifier")
+  #   warning_qualifier_tag = "<span class='italic'>#{warning_qualifier}</span>"
+  #   if sp_name
+  #     sp_name_tag = "<span class='bold'>#{sp_name}</span>"
+  #     warning_point_text = I18n.t("#{app_flow}.cancel.warning_point",
+  #       sp_name: sp_name_tag, warning_qualifier: warning_qualifier_tag)
+  #     split_tag(
+  #       split_tag(warning_point_text, sp_name_tag),
+  #       warning_qualifier_tag
+  #     ).join.html_safe
+  #   else
+  #     warning_point_text = I18n.t("#{app_flow}.cancel.warning_point_no_sp",
+  #       warning_qualifier: warning_qualifier_tag)
+  #     split_tag(warning_point_text, warning_qualifier_tag).join.html_safe
+  #   end
+  # end
 
   private
 
