@@ -1,5 +1,7 @@
 class SessionDecorator
   include Rails.application.routes.url_helpers
+  include ActionView::Helpers
+  include ActionView::Helpers::TagHelper
   include LocaleHelper
   include ContentHelper
 
