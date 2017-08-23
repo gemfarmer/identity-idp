@@ -1,5 +1,5 @@
 module DecoratedSessionHelper
-  def decorated_sessionx
+  def decorated_session
     sp = build_stubbed(
       :service_provider,
       friendly_name: 'Awesome Application!',

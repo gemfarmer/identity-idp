@@ -1,26 +1,16 @@
 require 'rails_helper'
 
 describe 'users/passwords/edit.html.slim' do
+  include DecoratedSessionHelper
+
   before do
     user = User.new
     allow(view).to receive(:current_user).and_return(user)
     @update_user_password_form = UpdateUserPasswordForm.new(user)
-    sp = build_stubbed(
-      :service_provider,
-      friendly_name: 'Awesome Application!',
-      return_to_sp_url: 'www.awesomeness.com'
-    )
-    view_context = ActionController::Base.new.view_context
-    @decorated_session = DecoratedSession.new(
-      sp: sp,
-      view_context: view_context,
-      sp_session: {},
-      service_provider_request: ServiceProviderRequest.new
-    ).call
+    allow(view).to receive(:decorated_session).and_return(decorated_session)
   end
 
   it 'has a localized title' do
-    # byebug
     expect(view).to receive(:title).with(t('titles.edit_info.password'))
 
     render

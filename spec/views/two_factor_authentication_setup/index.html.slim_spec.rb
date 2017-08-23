@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe 'users/two_factor_authentication_setup/index.html.slim' do
+  include DecoratedSessionHelper
+
   let(:sp_name) { '🔒🌐💻' }
 
   before do
@@ -10,7 +12,6 @@ describe 'users/two_factor_authentication_setup/index.html.slim' do
 
     @user_phone_form = UserPhoneForm.new(user)
 
-    decorated_session = instance_double(ServiceProviderSessionDecorator)
     allow(view).to receive(:decorated_session).and_return(decorated_session)
     allow(decorated_session).to receive(:sp_name).and_return(sp_name)
 
