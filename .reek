@@ -81,6 +81,7 @@ TooManyMethods:
     - Idv::Session
     - User
     - Verify::SessionsController
+    - ServiceProviderSessionDecorator
 UncommunicativeMethodName:
   exclude:
     - PhoneConfirmationFlow
