@@ -60,6 +60,8 @@ class S3ConfigManager
   end
 
   def download_config(s3_path, local_path)
+    return if File.exist?(local_path)
+
     s3_client.get_object(
       bucket: bucket,
       key: format(s3_path, env_name: env_name),
