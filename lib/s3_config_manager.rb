@@ -15,14 +15,19 @@ class S3ConfigManager
   end
 
   def self.ec2_metadata
+    response = ec2_http.get('/2016-09-02/dynamic/instance-identity/document')
+    JSON.parse(response.body)
+  rescue
+    nil
+  end
+
+  # @api private
+  def self.ec2_http
     http = Net::HTTP.new('169.254.169.254', 80)
     http.read_timeout = 1
     http.continue_timeout = 1
     http.open_timeout = 1
-    response = http.get('/2016-09-02/dynamic/instance-identity/document')
-    JSON.parse(response.body)
-  rescue
-    nil
+    http
   end
 
   def initialize(bucket:, env_name_path:, s3_client: nil)
