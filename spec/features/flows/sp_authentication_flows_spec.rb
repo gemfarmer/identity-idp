@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'SP-initiated authentication with login.gov', user_flow: true do
+feature 'SP-initiated authentication with login.gov', :user_flow do
   include IdvHelper
   include SamlAuthHelper
 
@@ -58,7 +58,11 @@ feature 'SP-initiated authentication with login.gov', user_flow: true do
 
                   context 'with a valid phone number' do
                     before do
-                      fill_in 'user_phone_form_phone', with: Faker::PhoneNumber.cell_phone
+                      phone = Faker::PhoneNumber.cell_phone
+                      until PhonyRails.plausible_number? phone, country_code: :us
+                        phone = Faker::PhoneNumber.cell_phone
+                      end
+                      fill_in 'user_phone_form_phone', with: phone
                     end
 
                     context 'with SMS delivery' do
