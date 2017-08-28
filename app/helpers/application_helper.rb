@@ -33,7 +33,7 @@ module ApplicationHelper
     params[:confirmation_token].present? || (current_user && !current_user.two_factor_enabled?)
   end
 
-  def user_registering?
+  def user_on_sign_up_registrations_page?
     current_page?(controller: 'sign_up/registrations', action: 'new')
   end
 
@@ -64,7 +64,7 @@ module ApplicationHelper
   end
 
   def cancel_link_text
-    if user_signing_up? || user_registering?
+    if user_signing_up? || user_on_sign_up_registrations_page?
       t('links.cancel_account_creation')
     elsif user_verifying_identity?
       t('links.cancel_idv')
